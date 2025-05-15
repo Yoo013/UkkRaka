@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        padding: 20px;
+    }
+    img {
+        width: 100px;
+        height: 200px;
+        border-radius: 5px;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        color: black;
+
+    }
+
+    .kanan {
+        margin-left: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    .btn {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 10px 24px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    .container {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+    .table thead td {
+        background-color: rgb(88, 88, 180);
+        color: white;
+    }
+
+    .section {
+        display: flex;
+        padding: 20px 50px 20px 50px;
+        gap: 20px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        gap: 10px;
+    }
+
+    input {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .button {
+        background-color: #4CAF50; /* Green */
+        margin-top: 10px;
+        border: none;
+        color: white;
+        padding: 10px 16px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    
+</style>
+<body>
+    <header>
+        <img src="baner.jpg" alt="">
+        <div class="kanan">
+            <p>Selamat Datang,Raka</p>
+            |
+            <a href="formoperator.html" class="btn">Logout</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <a class="btn" href="dashboard.html">Data Siswa</a>
+        <a class="btn" href="inputdatates.html">Input Tes</a>
+        <a class="btn" href="datates.html">Data Tes</a>
+    </div>
+
+    <section>
+    <h1>Input Data Tes</h1>
+
+    <form class="form" action="#">
+        <label for="nis">Nis</label>
+        <input value="1" type="number" placeholder="Masukkan Nis">
+        <label for="nama">Nama</label>
+        <input value="Sapik jelek" type="text" placeholder="Masukkan Nama">
+        <label for="jenis kelamin">Jenis Kelamin</label>
+        <input value="Laki-laki" type="radio">
+        <label for="tanggal lahir">Tanggal Lahir</label>
+        <input value="2000-01-01" type="date" placeholder="">
+        <label for="sekolah asal">Sekolah Asal</label>
+        <input value="SMA" type="text" placeholder="Masukkan Sekolah Asal">
+        <label for="nama">Pilihan Jurusan</label>
+        <input value="Rekayasa Perangkat Lunak" type="text" placeholder="Masukkan Pilihan Jurusan">
+        <label for="nama">Foto Siswa</label>
+        <input value="Foto Siswa" type="text" placeholder="">
+        <label for="nama">Telepon</label>
+        <input value="08123456789" type="text" placeholder="Masukkan Nomor Telepon">
+        <a href="datates.html" class="button">Masuk</a>
+    </form>
+    </section>
+</body>
+</html>
